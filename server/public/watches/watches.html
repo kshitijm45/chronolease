@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="watchesstyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd9d188545.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ChronoLease</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a class="logo">
+            <img src="../assets/images/logo.png" id="nav-logo" />
+            <span class="nav-item">CHRONOLEASE</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-profile">
+            <i class="fa-regular fa-user"></i>
+            <span class="nav-item">Profile</span>
+          </a>
+          <a id="nav-watches">
+            <i class="fa-regular fa-clock"></i>
+            <span class="nav-item">Watches</span>
+          </a>
+          <a id="nav-payments">
+            <i class="fa-regular fa-credit-card"></i>
+            <span class="nav-item">Payments</span>
+          </a>
+          <a id="nav-notifications">
+            <i class="fa-regular fa-bell"></i>
+            <span class="nav-item">Notifications</span>
+          </a>
+          <a id="nav-logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span class="nav-item">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form id="search-form">
+        <i class="fa-solid fa-magnifying-glass" id="magglass"></i>
+        <input type="text" id="search-input" />
+        <button type="submit">Search</button>
+      </form>
+      <div class="dropdownsdiv">
+        <div class="dropdown" id="brands">
+          <div class="select">
+            <span class="selected">Any</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">Any</li>
+          </ul>
+        </div>
+        <div class="dropdown" id="categories">
+          <div class="select">
+            <span class="selected">Any</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">Any</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard"></div>
+      <dialog class="modal" id="modal">
+        <i class="fa-solid fa-square-xmark fa-xl" id="close-modal"></i>
+        <form>
+          <label>Start Date</label>
+          <input type="date" /><br />
+          <label>End Date</label>
+          <input type="date" />
+          <button type="button">Rent Now!</button>
+          <p id="modalerrormsg"></p>
+        </form>
+      </dialog>
+    </div>
+    <script src="watchesscript.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #dfe9f5;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #fff;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+
+.logo {
+  top: 11px;
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#nav-logo {
+  height: 3rem;
+  margin-left: 22px;
+  margin-right: 10px;
+}
+
+.logo span {
+  margin-top: 0.1rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  position: relative;
+  color: #d1ad73;
+  font-size: 18px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.fa-regular {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  top: 14px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.fa-solid {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  top: 14px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 11px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background-color: #d1ad73;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+#nav-logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.logo:hover {
+  background-color: black;
+  color: #d1ad73;
+}
+
+#nav-notifications {
+  background-color: #d1ad73;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 50px;
+  padding: 2rem;
+  margin-left: 5.5rem;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-size: 30px;
+  margin-left: 5.5rem;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+
+h5 {
+  font-family: "Poppins";
+  padding-top: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.notification {
+  width: 82%;
+  padding: 10px 12px;
+  background-color: white;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 30px;
+  transition: 0.2 ease;
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  padding-top: 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+button {
+  align-self: flex-end;
+  border: none;
+  color: white;
+  background-color: #d1ad73;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: black;
+  color: #d1ad73;
+  cursor: pointer;
+}
+
+.notification:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signinstyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ChronoLease</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1 id="title">Sign In</h1>
+        <div class="btn-field">
+          <button id="customerbtn">Customer</button>
+          <button id="employeebtn" class="disable">Employee</button>
+        </div>
+        <div class="input-group">
+          <div class="input-field">
+            <input type="text" placeholder="Username" id="username" />
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Password" id="password" />
+          </div>
+        </div>
+        <div class="btn-field" id="enterdiv">
+          <button id="enter">Enter</button>
+        </div>
+        <div id="signuproute">
+          <p>Don't have an account? <span id="signuptext">Sign Up.</span></p>
+        </div>
+        <div class="errormsg">
+          <p>Invalid username or password.</p>
+        </div>
+      </div>
+    </div>
+    <script src="signinscript.js" type="module"></script>
+  </body>
+</html>

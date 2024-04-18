@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #dfe9f5;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #fff;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+
+.logo {
+  top: 11px;
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#nav-logo {
+  height: 3rem;
+  margin-left: 22px;
+  margin-right: 10px;
+}
+
+.logo span {
+  margin-top: 0.1rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  position: relative;
+  color: #d1ad73;
+  font-size: 18px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.fa-regular {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  top: 14px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.fa-solid {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  top: 14px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 11px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background-color: #d1ad73;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+#nav-logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.logo:hover {
+  background-color: black;
+  color: #d1ad73;
+}
+
+#nav-watches {
+  background-color: #d1ad73;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  text-align: center;
+  margin-left: 120px;
+}
+
+.item {
+  width: 27%;
+  min-width: 250px;
+  padding: 10px 12px;
+  background-color: white;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 30px;
+  transition: 0.2 ease;
+}
+
+.item:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.desc {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.desc span {
+  color: #606063;
+  font-size: 20px;
+}
+
+.desc h5 {
+  padding-top: 10px;
+  color: black;
+  font-size: 25px;
+}
+
+.available {
+  margin-top: 10px;
+  color: white;
+  background-color: lightgreen;
+  border-radius: 5px;
+  border: none;
+  max-width: fit-content;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.notavailable {
+  margin-top: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  max-width: fit-content;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.desc h4 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #d1ad73;
+}
+
+.dashboard button {
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.dashboard button:hover {
+  background-color: #d1ad73;
+  color: black;
+  cursor: pointer;
+}
+
+#search-form {
+  margin-top: 1.5rem;
+  background: #fff;
+  width: 600px;
+  height: 65px;
+  display: flex;
+  border: 1.5px solid #d1ad73;
+}
+
+#search-form input {
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 30px 20px;
+}
+
+#search-form button {
+  background: #d1ad73;
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 100%;
+}
+
+#search-form button:hover {
+  color: #d1ad73;
+  background-color: black;
+}
+
+#magglass {
+  align-self: center;
+  padding: 10px 20px;
+  margin-top: -15px;
+}
+
+.dropdown {
+  min-width: 15em;
+  position: relative;
+  margin: 2em;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background: lightslategray;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px lightslategray solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select:hover {
+  background-color: slategray;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #323741;
+  border: 1px #363a43 solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #2a2d35;
+}
+
+.active {
+  background: #23242a;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.dropdownsdiv {
+  display: flex;
+  flex-direction: row;
+}
+
+#add-btn {
+  font-family: "Poppins";
+  background-color: black;
+  color: #d1ad73;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+#add-btn:hover {
+  color: white;
+  background-color: #d1ad73;
+  cursor: pointer;
+}
+
+#modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: 3px solid black;
+  position: relative;
+  padding: 20px;
+}
+
+#modal i {
+  position: absolute; /* Position the icon absolutely */
+  top: 20px; /* Adjust the top position as needed */
+  right: 1px; /* Adjust the right position to align it to the extreme right */
+  margin-top: 5px;
+}
+
+#modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-width: 30ch;
+  min-height: 20ch;
+  padding: 20px;
+}
+
+#modal input {
+  margin-bottom: 20px;
+  border: 1px solid black;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+#modal::backdrop {
+  background: #606063;
+  opacity: 0.5;
+}
+
+.modal button {
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal button:hover {
+  background-color: #d1ad73;
+  color: black;
+  cursor: pointer;
+}

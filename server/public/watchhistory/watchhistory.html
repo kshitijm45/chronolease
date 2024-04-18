@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="watchhistorystyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd9d188545.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ChronoLease</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a class="logo">
+            <img src="../assets/images/logo.png" id="nav-logo" />
+            <span class="nav-item">CHRONOLEASE</span>
+          </a>
+        </li>
+        <li>
+          <a id="nav-profile">
+            <i class="fa-regular fa-user"></i>
+            <span class="nav-item">Profile</span>
+          </a>
+          <a id="nav-watches">
+            <i class="fa-regular fa-clock"></i>
+            <span class="nav-item">Watches</span>
+          </a>
+          <a id="nav-watchhistory">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span class="nav-item">Watch History</span>
+          </a>
+          <a id="nav-logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span class="nav-item">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="details">
+        <div class="searchdiv">
+          <h5>Enter watch id:</h5>
+          <input type="number" id="watchidfield" />
+          <button type="button">Search</button>
+        </div>
+      </div>
+    </div>
+    <script src="watchhistoryscript.js" type="module"></script>
+  </body>
+</html>

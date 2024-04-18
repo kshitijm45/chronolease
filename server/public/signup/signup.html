@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signupstyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ChronoLease</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1 id="title">Sign Up</h1>
+        <div class="btn-field">
+          <button id="customerbtn">Customer</button>
+        </div>
+        <div class="input-group">
+          <div class="input-field">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-field" id="addresstext">
+            <input type="text" placeholder="Address" />
+          </div>
+          <div class="input-field" id="phonetext">
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Password" />
+          </div>
+        </div>
+        <div class="btn-field" id="enterdiv">
+          <button id="enter">Enter</button>
+        </div>
+        <div id="signuproute">
+          <p>Already have an account? <span id="signintext">Sign In.</span></p>
+        </div>
+        <p id="errormsg"></p>
+      </div>
+    </div>
+    <script src="signupscript.js" type="module"></script>
+  </body>
+</html>
